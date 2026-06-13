@@ -1,0 +1,53 @@
+/* Classes */
+:has(>.site_holder) {
+    perspective: 1000px;
+}
+.site_holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: fit-content;
+    background-color: var(--midground);
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    padding: 4px;
+    margin: 4px;
+    margin-bottom: 8px;
+
+    box-shadow:
+        0px 0px 0px 1px var(--highlight),
+        0px 4px 8px var(--shadow)
+    ;
+
+    transition: all 0.2s;
+}
+.site_holder:hover {
+    z-index: 100;
+
+    transform: scale(1.1);
+}
+    .site_logo {
+        object-fit: contain;
+
+        width: 24px;
+
+        border-radius: 4px;
+    }
+    .site_title {
+        margin: 0px;
+        margin-left: 4px;
+
+        text-decoration: underline;
+    }
+    .at {
+        margin-left: 8px;
+
+        color: var(--text-color);
+    }
+    .username {
+        color: var(--text-color);
+    }

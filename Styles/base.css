@@ -1,0 +1,89 @@
+
+
+/* Elements */
+body {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--text-color);
+    
+    position: absolute;
+    left: 50%;
+    width: max-content;
+    max-width: calc(100vw - 16px);
+    height: calc(100vh - 24px);
+    background-color: var(--background);
+
+    padding: 24px 8px 0px 8px;
+    margin: 0px;
+
+    transform: translateX(-50%);
+}
+nav {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+
+    position: fixed;
+    left: 50%;
+    top: 0px;
+    width: max-content;
+    min-width: 128px;
+    max-width: calc(100vw - 16px);
+    height: 24px;
+    background-color: var(--foreground);
+
+    padding: 0px;
+    padding-top: 0px;
+
+    border-radius: 0px 0px 2px 2px;
+
+    box-shadow:
+        0px 0px 0px 1px var(--highlight),
+        0px 4px 4px var(--shadow)
+    ;
+
+    transform: translateX(-50%);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 8px 0px;
+    margin: 8px;
+}
+a {
+    color: var(--link-color);
+
+    &:active {
+        color: var(--link-active);
+    }
+    &:visited {
+        color: var(--link-visited);
+    }
+}
+
+/* Classes */
+.pretitle, .title, .subtitle {
+    margin: 0px;
+}
+.subtitle {
+    color: var(--text-faded);
+}
+
+:has(>.navElement) {
+    width: max-content;
+}
+.navElement {
+    color: var(--text-color);
+
+    border-radius: 0px 0px 2px 2px;
+}
+
+.divider {
+    position: relative;
+    min-width: 1px;
+    min-height: 1px;
+    background-color: var(--highlight);
+}

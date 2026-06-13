@@ -1,0 +1,17 @@
+:root {
+    --background: rgb(32, 32, 32);
+    --midground: rgb(64, 64, 64);
+    --foreground: rgb(80, 80, 80);
+
+    --shadow: rgb(4, 4, 16, 0.5);
+    --highlight: rgb(255, 255, 255, 0.5);
+
+    --text-color: rgb(255, 255, 255);
+    --text-faded: rgb(255, 255, 255, 0.5);
+
+    --link-color: rgb(64, 128, 255);
+    --link-active: rgb(255, 64, 128);
+    --link-visited: rgb(128, 64, 255);
+
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
