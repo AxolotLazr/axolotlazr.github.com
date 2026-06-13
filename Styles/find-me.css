@@ -15,11 +15,12 @@
     border-radius: 4px;
 
     padding: 4px;
+    padding-right: 8px;
     margin: 4px;
     margin-bottom: 8px;
 
     box-shadow:
-        0px 0px 0px 1px var(--highlight),
+        inset 0px 0px 0px 1px var(--highlight),
         0px 4px 8px var(--shadow)
     ;
 
@@ -28,7 +29,12 @@
 .site_holder:hover {
     z-index: 100;
 
-    transform: scale(1.1);
+    transform:
+        translateX(16px)
+        translateZ(32px)
+        rotateY(10deg)
+        rotateX(10deg)
+    ;
 }
     .site_logo {
         object-fit: contain;
