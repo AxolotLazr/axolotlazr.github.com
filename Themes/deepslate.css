@@ -1,10 +1,10 @@
 :root {
     --background: rgb(32, 32, 32);
-    --midground: rgb(64, 64, 64);
-    --foreground: rgb(80, 80, 80);
+    --midground: rgb(48, 48, 48);
+    --foreground: rgb(64, 64, 64);
 
     --shadow: rgb(4, 4, 16, 0.5);
-    --highlight: rgb(255, 255, 255, 0.5);
+    --highlight: rgb(255, 255, 255, 0.2);
 
     --text-color: rgb(255, 255, 255);
     --text-faded: rgb(255, 255, 255, 0.5);
